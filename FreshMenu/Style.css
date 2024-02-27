@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.82);
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+a:hover{
+    color: orange;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .links{
+    display: flex;
+    gap: 20px;
+}
+.action_btn{
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.content{
+    width: 500px;
+}
+.content h1,p,a{
+    margin: 20px 0 20px 0;
+}
+.content h1{
+    color:#fff;
+}
+.content p{
+    color: #ffffff89;
+}
+.content a{
+    background-color: orangered;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+}
+.banner img{
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    margin-top: 30px;
+} 
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+section .header{
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+}
+.item-container{
+    margin: 50px;
+}
+.item-container div{
+    background-color: #fff;
+    width: 270px;
+    height: 300px;
+    text-align: center;
+    padding: 15px;
+
+}
+.item-container div ,img, h3, a{
+    padding: 10px;
+}
+.item-container div img{
+    height: 210px;
+    width: 250px;
+}
+.item-container div a{
+    text-decoration: none;
+    background-color: orangered;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+.item-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.customer-reviews{
+    margin: 65px;
+}
+.customer-reviews h1{
+    text-align: center;
+    color: #fff;
+}
+.c-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+}
+.c-reviews div{
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+.c-reviews div img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+.food-collection{
+    position: relative;
+    /* width: 100%; */
+    height: 300px;
+}
+.food-collection .trends{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.food-collection .trends img{
+    width: 300px;
+    background-color: #fff;
+    padding: 4px;
+}
+.trending-content h1{
+    text-align: center;
+    margin: 50px;
+    color: #fff;
+    font-size: 30px;
+}
+.footer{
+    margin-top: 50px;
+    background-color: black;
+    color: #ffffff76;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+}
+.footer h1{
+    color: #fff;
+}
+.footer ul{
+    list-style: none;
+}
+.Footer-data {
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.toggle_btn{
+    display: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.dropdown-menu ul li a{
+    text-decoration: none;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background:rgba(225, 225, 225, 0.6);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    border-radius: 15px;
+    text-align: center;
+}
+.dropdown-menu.open{
+    height: 80px;
+}
+.dropdown-menu ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+.dropdown-menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:650px) {
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown-menu{
+        display: block;
+    }
+}
+@media (max-width:500px) {
+    .dropdown-menu{
+        left:2rem;
+        width: unset;
+    }
+}
+
+    .container{
+        padding: 10px 5px 10px 5px ;
+    }
+    
+
+@media (max-width:500px) {
+    .dropdown-menu{
+        left:2rem;
+        width: unset;
+    }
+}
+@media (max-width:460px) {
+    .banner img{
+        width: 350px;
+
+    }
+}
